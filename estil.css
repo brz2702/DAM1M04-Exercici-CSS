@@ -1,0 +1,51 @@
+body {
+    background-color: black;
+    color: gold;
+}
+
+.no_profesional {
+    color: red;
+    text-decoration: underline;
+}
+
+.nom:hover {
+    color: black;
+    background-color: gold;
+}
+
+.nom::after {
+    content:" (a.k.a. Agarwaen)";
+    font-size: 20;
+    color: black;
+}
+
+a {
+    color: purple;
+    text-decoration: underline;
+}
+
+a:hover {
+    color: white;
+    text-decoration: underline;
+}
+
+h1 {
+    font-family: 'Pixelify Sans', sans-serif;
+    font-size: 50;
+}
+
+h2 {
+
+}
+
+h3 {
+
+}
+
+li {
+
+}
+
+p {
+
+}
