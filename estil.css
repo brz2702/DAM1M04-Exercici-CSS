@@ -3,9 +3,18 @@ body {
     color: gold;
 }
 
-.no_profesional {
-    color: red;
+#hp > li:nth-child(3)::after, #hp > li:nth-child(4)::after {
+    content: "(no professional)";
+    color: black;
+}
+
+#hp > li:nth-child(3):hover, #hp > li:nth-child(4):hover {
+    background-color: black;
+}
+
+#hp > li:nth-child(3):hover::after, #hp > li:nth-child(4):hover::after {
     text-decoration: underline;
+    color: red
 }
 
 .nom:hover {
@@ -15,8 +24,17 @@ body {
 
 .nom::after {
     content:" (a.k.a. Agarwaen)";
+    font-family: 'Wingdings', sans-serif;
     font-size: 20;
-    color: black;
+    display: block;
+}
+
+.nom:hover::after {
+    font-family: 'Pixelify Sans', sans-serif;
+}
+
+.joc {
+    font-family: 'Press Start 2P', cursive;
 }
 
 a {
@@ -29,23 +47,59 @@ a:hover {
     text-decoration: underline;
 }
 
+a::before{
+    content: "» ";
+}
+
 h1 {
     font-family: 'Pixelify Sans', sans-serif;
     font-size: 50;
 }
 
 h2 {
-
+    font-style: italic;
+    font-size: 30;
 }
 
 h3 {
-
+    font-style: italic;
+    font-size: 20;
 }
 
-li {
+ul > li {
+    color: white;
+}
 
+ul  > li:hover {
+    color: white;
+    background-color: darkgoldenrod;
+}
+
+ol > li:nth-child(even) {
+    color: white;
+}
+
+ol > li:nth-child(odd) {
+    color: rgb(63, 63, 255);
 }
 
 p {
-
+    color: white;
 }
+
+img {
+    border: 2px solid gold;
+}
+
+#pscratch {
+    color: orange;
+}
+
+#rrpg {
+    color: cyan;
+}
+
+#jatzar {
+    color: lightgreen;
+}
+
