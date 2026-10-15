@@ -2,6 +2,24 @@ body {
     background-color: black;
     color: gold;
 }
+.menu {
+    position: sticky;
+    top:0;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.menu > a {
+    font-family: 'Pixelify Sans', sans-serif;
+    font-size: 20px;
+    border: 1px solid white;
+    width: 100%;
+    background-color: black;
+    min-height: 50px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
 
 #hp > li:nth-child(3)::after, #hp > li:nth-child(4)::after {
     content: "(no professional)";
@@ -39,7 +57,7 @@ body {
 
 a {
     color: purple;
-    text-decoration: underline;
+    text-decoration: underline;;
 }
 
 a:hover {
@@ -102,4 +120,3 @@ img {
 #jatzar {
     color: lightgreen;
 }
-
