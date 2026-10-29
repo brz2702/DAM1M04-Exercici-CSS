@@ -1,15 +1,16 @@
 @import url('<link rel="stylesheet" href="https://use.typekit.net/pvt4nja.css">');
 
 body {
-    background-color: black;
+    background-color: rgba(0, 0, 0);
     color: white;
     margin-top: 60px;
     justify-content: center;
     color: gold;
+    display: flex;
+    text-align: center;
 }
 
 nav {
-    color: white;
     position: fixed;
     top: 0;
     left: 0;
@@ -22,11 +23,20 @@ nav {
 
 nav > a {
     text-decoration: none;
-    color: white;
 }
 
 nav > a:hover {
     color: gold
+}
+
+footer {
+    margin-top: 50px;
+    position:absolute;
+    left: 0;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    background-color: black;
 }
 
 #hp > li:nth-child(3)::after, #hp > li:nth-child(4)::after {
@@ -107,6 +117,10 @@ ol > li:nth-child(even) {
 
 ol > li:nth-child(odd) {
     color: rgb(63, 63, 255);
+}
+
+li {
+    display: flex;
 }
 
 p {
